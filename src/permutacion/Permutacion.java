@@ -1,4 +1,4 @@
-package Permutacion;
+package permutacion;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,6 +18,7 @@ public class Permutacion {
             return resultado;
         }
 
+        // Start the recursive permutation generation
         permutar("", str, resultado);
         return resultado;
     }
@@ -31,7 +32,7 @@ public class Permutacion {
         for (int i = 0; i < restante.length(); i++) {
             String nuevoPrefijo = prefijo + restante.charAt(i);
             String nuevoRestante = restante.substring(0, i) + restante.substring(i + 1);
-            permutar(nuevoPrefijo, nuevoRestante, resultado);
+            permutar(nuevoPrefijo, nuevoRestante, resultado); // Recursive call to generate permutations
         }
     }
 }

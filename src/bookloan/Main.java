@@ -1,4 +1,4 @@
-package BookLoan;
+package bookloan;
 
 public class Main {
 }
